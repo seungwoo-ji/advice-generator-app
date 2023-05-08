@@ -1,0 +1,35 @@
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+}
+
+.advice {
+  font-size: 0.7rem;
+  position: relative;
+  max-width: 30em;
+  background-color: var(--dark-grayish-blue);
+  padding: 3.5em 1em;
+  border-radius: 18px;
+}
+
+.advice__id {
+  color: var(--neon-green);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advice__text {
+  font-size: 2em;
+  text-align: center;
+  color: var(--light-cyan);
+  margin: 1.2em auto;
+}
+
+@media screen and (min-width: 30rem) {
+  .advice {
+    font-size: 1rem;
+    padding: 3.5em;
+  }
+}
