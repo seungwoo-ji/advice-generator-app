@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 import Button from './components/Button/Button';
 import Divider from './components/Divider/Divider';
+import Loading from './components/Loading/Loading';
 
 import styles from './App.module.css';
 
@@ -47,7 +48,7 @@ function App() {
   };
 
   let heading = 'Please wait...';
-  let content = 'Loading...';
+  let content = '';
 
   if (!isLoading) {
     heading = !error ? 'Advice #' + advice?.id : 'Oops!';
@@ -57,6 +58,7 @@ function App() {
   return (
     <div className={styles['advice']}>
       <h1 className={styles['advice__id']}>{heading}</h1>
+      {isLoading && <Loading />}
       <p className={styles['advice__text']}>{content}</p>
       <Divider />
       <Button onClick={clickHandler} />
