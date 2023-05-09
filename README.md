@@ -30,8 +30,8 @@ npm run build # bundle the application using Webpack
 
 ## Links
 
-- Solution URL: [Solution URL]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/advice-generator-app-reactjs-F5rMLj9nUW)
+- Live Site URL: [Live site URL](https://iridescent-kulfi-eae9c6.netlify.app/)
 
 ## Built with
 
